@@ -16,23 +16,23 @@ class ControlTipo_Notificacion {
         $this->objD = new daoNegocio();
     }
     
-    public function listarActividadxCod($codigo) {
-        return $this->objD->listarActividadxCod($codigo);
+    public function listarTipo_NotificacionxCod($codigo) {
+        return $this->objD->listarTipo_NotificacionxCod($codigo);
     }
 
-    public function listarActividad() {
-        return $this->objD->listarActividad();
+    public function listarTipo_Notificacion() {
+        return $this->objD->listarTipo_Notificacion();
     }
     
-    public function codAutActividad() {
-        return $this->objD->codAutActividad();
+    public function codAutTipo_Notificacion() {
+        return $this->objD->codAutTipo_Notificacion();
     }
     
-    public function registrarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
-        return $this->objD->registrarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
+    public function registrarTipo_Notificacion($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
+        return $this->objD->registrarTipo_Notificacion($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
     }
     
-    public function actualizarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
-        return $this->objD->actualizarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
+    public function actualizarTipo_Notificacion($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
+        return $this->objD->actualizarTipo_Notificacion($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
     }
 }

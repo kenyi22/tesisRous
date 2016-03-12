@@ -16,23 +16,23 @@ class ControlCategoria {
         $this->objD = new daoNegocio();
     }
     
-    public function listarActividadxCod($codigo) {
-        return $this->objD->listarActividadxCod($codigo);
+    public function listarCategoriaxCod($codigo) {
+        return $this->objD->listarCategoriaxCod($codigo);
     }
 
-    public function listarActividad() {
-        return $this->objD->listarActividad();
+    public function listarCategoria() {
+        return $this->objD->listarCategoria();
     }
     
-    public function codAutActividad() {
-        return $this->objD->codAutActividad();
+    public function codAutCategoria() {
+        return $this->objD->codAutCategoria();
     }
     
-    public function registrarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
-        return $this->objD->registrarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
+    public function registrarCategoria($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
+        return $this->objD->registrarCategoria($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
     }
     
-    public function actualizarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
-        return $this->objD->actualizarActividad($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
+    public function actualizarCategoria($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD) {
+        return $this->objD->actualizarCategoria($ID_ACTIVIDAD,$ID_USUARIO,$NOMBRE,$DESCRIPCION,$FECHA_HORA_INICIO,$COSTO,$FECHA_REGISTRO,$ESTADO,$PRIORIDAD,$COMPLEJIDAD);
     }
 }

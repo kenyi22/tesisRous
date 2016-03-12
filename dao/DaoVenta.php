@@ -12,7 +12,7 @@
  * @author kenyi
  */
 class DaoVenta {
-    public function listarActividadxCod($codigo) {
+    public function listarVentaxCod($codigo) {
         try {
             $sql = "SELECT * FROM tbl_actividad where Id_Actividad='" . $codigo . "'";
             $resul = mysql_query($sql, $this->con);
@@ -27,7 +27,7 @@ class DaoVenta {
         }
     }
 
-    public function listarActividad() {
+    public function listarVenta() {
         try {
             $sql = "SELECT * FROM tbl_actividad order by Id_Actividad";
             $resul = mysql_query($sql, $this->con);
@@ -42,7 +42,7 @@ class DaoVenta {
         }
     }
 
-    public function codAutActividad() {
+    public function codAutVenta() {
         try {
             $sql = "SELECT COUNT(*) +1 FROM tbl_actividad";
             $resul = mysql_query($sql, $this->con);
@@ -63,7 +63,7 @@ class DaoVenta {
         }
     }
 
-    public function registrarActividad($ID_ACTIVIDAD, $ID_USUARIO, $NOMBRE, $DESCRIPCION, $FECHA_HORA_INICIO, $COSTO, $FECHA_REGISTRO, $ESTADO, $PRIORIDAD, $COMPLEJIDAD) {
+    public function registrarVenta($ID_ACTIVIDAD, $ID_USUARIO, $NOMBRE, $DESCRIPCION, $FECHA_HORA_INICIO, $COSTO, $FECHA_REGISTRO, $ESTADO, $PRIORIDAD, $COMPLEJIDAD) {
         try {
             $sql = " INSERT INTO tbl_actividad (Id_Actividad,Nombre,Descripción,Fecha_Hora_Inicio,Fecha_Hora_Fin,Costo,Fecha_Registro,Estado,Prioridad,Complejidad,Id_Usuario) "
                     . "VALUES ('$ID_ACTIVIDAD','$ID_USUARIO','$NOMBRE','$DESCRIPCION','$FECHA_HORA_INICIO','$COSTO','$FECHA_REGISTRO','$ESTADO','$PRIORIDAD','$COMPLEJIDAD')";
@@ -75,7 +75,7 @@ class DaoVenta {
         return $resul;
     }
 
-    public function actualizarActividad($ID_ACTIVIDAD, $ID_USUARIO, $NOMBRE, $DESCRIPCION, $FECHA_HORA_INICIO, $COSTO, $FECHA_REGISTRO, $ESTADO, $PRIORIDAD, $COMPLEJIDAD) {
+    public function actualizarVenta($ID_ACTIVIDAD, $ID_USUARIO, $NOMBRE, $DESCRIPCION, $FECHA_HORA_INICIO, $COSTO, $FECHA_REGISTRO, $ESTADO, $PRIORIDAD, $COMPLEJIDAD) {
         try {
             $sql = "UPDATE tbl_actividad SET "
                     . "Nombre='$persona',"
